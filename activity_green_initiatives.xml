@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_green_initiatives"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textViewInitiatives"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details about green initiatives..."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Add Section for Nature Reserves -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Local Nature Reserves:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewNatureReserves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Information about nearby nature reserves..."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Add Section for Sustainability Practices -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sustainability Practices:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewSustainability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details about sustainability practices..."
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Action Buttons -->
+        <Button
+            android:id="@+id/buttonJoinInitiative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Join Our Sustainability Initiative"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/eco_green_primary" />
+
+        <Button
+            android:id="@+id/buttonBookEcoTour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Eco-Tour"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/eco_green_secondary" />
+
+    </LinearLayout>
+</ScrollView>

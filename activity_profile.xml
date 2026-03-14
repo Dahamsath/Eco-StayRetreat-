@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/eco_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_my_profile"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/eco_text_primary"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Header card with avatar and basic info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/textViewAvatar"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:text="JD"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:background="@drawable/bg_avatar_circle" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="12dp">
+
+                <TextView
+                    android:id="@+id/textViewProfileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="John Doe"
+                    android:textStyle="bold"
+                    android:textColor="@color/eco_text_primary"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textViewProfileEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="user@example.com"
+                    android:textColor="@color/eco_text_secondary"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Details card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/textViewPreferences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preferences: Not set"
+                android:textColor="@color/eco_text_primary"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/textViewTravelDates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Travel Dates: Not set"
+                android:textColor="@color/eco_text_primary"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Booking history card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking History"
+                android:textStyle="bold"
+                android:textColor="@color/eco_text_primary"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <ListView
+                android:id="@+id/listViewBookings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#DDDDDD"
+                android:dividerHeight="1dp"
+                android:nestedScrollingEnabled="true" />
+
+            <TextView
+                android:id="@+id/textViewNoBookings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No bookings yet"
+                android:textColor="@color/eco_text_secondary"
+                android:textSize="14sp"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+        <!-- Actions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start">
+
+            <Button
+                android:id="@+id/buttonEditProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Edit Profile"
+                android:backgroundTint="@color/eco_green_primary" />
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/buttonRecommendations"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="View Recommendations"
+                android:backgroundTint="@color/eco_accent" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

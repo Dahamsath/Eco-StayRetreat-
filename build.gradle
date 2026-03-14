@@ -1,0 +1,6 @@
+// File: build.gradle (Project-level)
+plugins {
+    // Use a version compatible with Gradle 8.5, e.g., 8.2.2 or 8.3.0
+    id 'com.android.application' version '8.12.3' apply false // Or '8.3.0'
+    // id 'com.android.library' version '8.2.2' apply false // If you have library modules
+}

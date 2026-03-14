@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_main"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/buttonRooms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_room_list"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonActivities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_activity_list"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_profile"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonGreenInitiatives"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_green_initiatives"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonRecommendations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Personalized Recommendations"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity Calendar"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonNotifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notifications and Offers"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#F44336" />
+
+</LinearLayout>
